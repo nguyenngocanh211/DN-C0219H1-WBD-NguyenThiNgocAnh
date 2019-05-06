@@ -10,7 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <head>
   <title>Simple Dictionary</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" >
 </head>
 <body>
 <h2>Vietnamese Dictionary</h2>

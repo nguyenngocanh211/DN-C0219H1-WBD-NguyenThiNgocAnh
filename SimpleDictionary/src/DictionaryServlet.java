@@ -9,7 +9,7 @@ import java.util.Map;
 public class DictionaryServlet extends javax.servlet.http.HttpServlet {
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         Map<String, String> dictionary = new HashMap<>();
-        dictionary.put("hello", "Xin chàoa");
+        dictionary.put("hello", "Xin chào");
         dictionary.put("how", "Thế nào");
         dictionary.put("book", "Quyển vở");
         dictionary.put("computer", "Máy tính");
