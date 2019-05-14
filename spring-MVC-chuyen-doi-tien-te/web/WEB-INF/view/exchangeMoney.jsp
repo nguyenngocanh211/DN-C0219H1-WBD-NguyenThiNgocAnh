@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%--
   Created by IntelliJ IDEA.
   User: Anh
@@ -12,19 +13,31 @@
 </head>
 <body>
 <h1>Exchange Money</h1>
+<form action="/exchange" method="post">
 <table>
     <tr>
-        <td>USD:</td>
-        <td>${usd}</td>
+        <td><select name="money">
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="vnd">VND</option>
+        </select></td>
+        <td><input type="text" value="0" name="valueMoney"></td>
     </tr>
     <tr>
-        <td>RATE:</td>
-        <td>${rate}</td>
+        <td>RATE: ${rate}</td>
+        <td><select name="moneyOutput">
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="vnd">VND</option>
+        </select></td>
     </tr>
+
+    <td><input type="submit" id="submit" value="Exchange"></td>
     <tr>
-        <td>VND:</td>
-        <td>${vnd}</td>
+
+        <td>Result: ${result}</td>
     </tr>
-</table>
+
+</table></form>
 </body>
 </html>
