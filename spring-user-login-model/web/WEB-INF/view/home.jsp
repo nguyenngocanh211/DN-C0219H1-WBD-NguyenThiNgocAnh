@@ -5,7 +5,7 @@
   Time: 12:30 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -14,6 +14,7 @@
 <body>
 <h3>Home</h3>
 <%--@elvariable id="login" type="example"--%>
+<%--@elvariable id="user" type="example"--%>
 <form:form action= "/login" method="post" modelAttribute="login">
     <fieldset>
         <legend>Login</legend>
